@@ -12,8 +12,8 @@
                 </p>
 
                 <h2 className="max-w-[720px] text-5xl font-light leading-tight text-surface-dark">
-                Jeder redet von <span className="text-accent"> KI. </span>
-                Dabei fehlt es häufig schon an der nötigen <span className="text-accent-secondary">Grundlage.</span>
+                Viele Unternehmen haben nicht <span className="text-accent"> zu wenig Daten. </span>
+                Sie kommen nur nicht <span className="text-accent-secondary">adressatengerecht</span> an.
                 </h2>
 
                 <div className="mt-12 grid grid-cols-2 gap-x-12 gap-y-8">

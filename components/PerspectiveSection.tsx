@@ -12,9 +12,10 @@ export default function PerspectiveSection() {
           </p>
 
           <h2 className="text-5xl font-light leading-tight text-surface-dark">
-            Erfahrung schafft Vertrauen.
+            Über {" "} <span className="text-accent-secondary">8 Jahre</span> {" "} praktische Erfahrung
             <br />
-            Perspektive schafft Lösungen.
+            in der {" "} <span className="text-accent">Projektsteuerung</span> {" "} und {" "}
+            <span className="text-accent">strategischen Transformationsprojekten.</span>
           </h2>
 
         </div>
@@ -42,12 +43,14 @@ export default function PerspectiveSection() {
 
               <p className="text-surface-dark">
 
-                Wir haben in allen drei Bereichen bereits Verantwortung übernommen.
+                Wir kennen die Perspektiven vom Vorstand bis zur operativen Umsetzung. 
 
               </p>
 
             </div>
 
+
+            {/*
             <p className="mt-10 text-xl leading-9 text-text-secondary">
 
                 Deshalb entwickeln wir Informationslogik,
@@ -55,9 +58,9 @@ export default function PerspectiveSection() {
                 organisatorisch funktioniert
                 und technisch umgesetzt werden kann.
 
-            </p>
+            </p>*/}
 
-          </div>
+          </div>  
 
           {/* Right */}
         
@@ -67,7 +70,7 @@ export default function PerspectiveSection() {
 
 
             
-            <div className="mt-20">
+            <div className="mt-0">
 
               <p className="text-sm uppercase tracking-[0.25em] text-text-secondary">
                 VOLKSWAGEN

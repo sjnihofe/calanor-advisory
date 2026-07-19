@@ -9,18 +9,22 @@ export default function Hero() {
       <div className="max-w-[760px] -ml-20 flex-shrink-0">
 
         <h1 className="text-6xl font-light leading-tight text-surface-dark">
-          Sie brauchen nicht noch mehr Daten.
-          Sie brauchen ein besseres {" "} <span className="text-accent">Steuerungsmodell.</span>
+          Bessere Entscheidungen
+          <br />
+          beginnen mit dem richtigen
+          <br />
+          <span className="text-accent">Informationsfluss.</span>
         </h1>
 
         <p className="mt-2 max-w-[500px] text-xl font-light leading-relaxed text-text-primary">
-          Wir entwickeln Steuerungsmodelle für Unternehmen, 
+          Wir verstehen Ihre Fragestellungen und verbessern
           <br /> 
-          mit denen die richtigen Informationen zur richtigen Zeit vorliegen.
-          Wir verbessern Ihre  <span className="text-accent-secondary">
-            {" "}Entscheidungsfähigkeit-{" "}
-          </span> 
-         
+          <span className="text-accent-secondary">
+            {" "}Ihre Entscheidungsfähigkeit{" "}
+          </span>
+          
+          indem wir die richtigen Informationen zur richtigen Zeit zu Ihren Entscheidern
+          bringen.
         </p>
 
         {/* 
