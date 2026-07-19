@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  /* ===== Fonts ===== */
+  --font-sans: var(--font-ibm-plex-sans);
+
+  /* ===== Colors ===== */
+  --background: #EBEBED;
+
+  --surface: #F4F4F5;
+  --surface-dark: #3B4148;
+
+  --text-primary: #1F2328;
+  --text-secondary: #5C646D;
+  --text-inverse: #FFFFFF;
+
+  --accent: #0F5C63;
+  --accent-hover: #0C4F55;
+  --accent-secondary: #A8783D;
+
+  --brand-neutral: #5C646D;
+}
+
+@theme inline {
+  /* Fonts */
+  --font-sans: var(--font-sans);
+
+  /* Backgrounds */
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-dark: var(--surface-dark);
+
+  /* Text */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-inverse: var(--text-inverse);
+
+  /* Brand */
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-brand-neutral: var(--brand-neutral);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
