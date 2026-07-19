@@ -12,9 +12,9 @@ export default function PerspectiveSection() {
           </p>
 
           <h2 className="text-5xl font-light leading-tight text-surface-dark">
-            Noch wichtiger als Erfahrung
+            Erfahrung schafft Vertrauen.
             <br />
-            ist die richtige Perspektive.
+            Perspektive schafft Lösungen.
           </h2>
 
         </div>

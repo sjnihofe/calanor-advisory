@@ -42,8 +42,8 @@ export default function ImpressumPage() {
             <div className="space-y-2 text-lg font-light leading-relaxed text-surface-dark">
               <p>Niklas Hofeditz</p>
               <p>Calanor Advisory</p>
-              <p>Musterstraße 1</p>
-              <p>12345 Musterstadt</p>
+              <p>Nordstr. 34</p>
+              <p>38106 Braunschweig</p>
               <p>Deutschland</p>
             </div>
           </section>
