@@ -1,6 +1,29 @@
+import Link from "next/link";
+
 export default function DatenschutzPage() {
   return (
     <main className="bg-background min-h-screen">
+      
+      <section className="mx-auto max-w-4xl px-8 py-20">
+
+        <Link
+          href="/"
+          className="text-text-secondary transition-colors hover:text-surface-dark"
+        >
+          ← Zur Startseite
+        </Link>
+
+        <div className="pt-16 text-center">
+
+            <h1 className="text-[8rem] font-light tracking-[0.20em] text-surface-dark">
+            CALANOR
+            </h1>
+
+            <p className="mt-2 text-6xl font-extralight tracking-[0.10em] text-accent">
+            ADVISORY
+            </p>
+        </div>
+      
       <section className="mx-auto max-w-4xl px-8 py-24">
 
         <p className="mb-4 text-sm uppercase tracking-[0.35em] text-text-secondary">
@@ -456,6 +479,7 @@ export default function DatenschutzPage() {
 
         </div>
       </section>
+      </section>     {/* äußere Section */}
     </main>
   );
 }

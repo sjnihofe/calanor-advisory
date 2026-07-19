@@ -82,7 +82,7 @@ export default function WhyCalanor() {
 
             {/* Box */}
 
-            <div className="relative z-10 -translate-x-3 w-[460px] border border-border bg-background px-16 py-6 text-center">
+            <div className="relative z-10 -translate-x-3 w-[460px] border border-border bg-background/98 px-16 py-6 text-center">
 
             <div className="text-center">
 

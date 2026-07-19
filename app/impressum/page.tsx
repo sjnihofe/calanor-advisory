@@ -79,7 +79,8 @@ export default function ImpressumPage() {
           </section>
 
           {/* Umsatzsteuer */}
-
+          
+          {/*
           <section>
             <p className="mb-6 text-sm uppercase tracking-[0.25em] text-text-secondary">
               Umsatzsteuer
@@ -93,6 +94,8 @@ export default function ImpressumPage() {
             </p>
           </section>
 
+          */}
+
           {/* Verantwortlich */}
 
           <section>
@@ -102,8 +105,8 @@ export default function ImpressumPage() {
 
             <div className="space-y-2 text-lg font-light leading-relaxed text-surface-dark">
               <p>Niklas Hofeditz</p>
-              <p>Musterstraße 1</p>
-              <p>12345 Musterstadt</p>
+              <p>Nordstr. 34</p>
+              <p>38106 Braunschweig</p>
             </div>
           </section>
 

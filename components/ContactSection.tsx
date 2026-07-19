@@ -10,7 +10,7 @@ export default function ContactSection() {
 
         {/* CTA */}
 
-        <div className="mx-auto max-w-4xl py-24 text-center">
+        <div className="mx-auto max-w-4xl pt-12 pb-24 text-center">  
 
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-text-secondary">
             KONTAKT
