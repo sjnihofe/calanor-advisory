@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Brand from "../components/Brand";
+
 
 export default function ImpressumPage() {
   return (
