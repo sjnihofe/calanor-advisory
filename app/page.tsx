@@ -14,11 +14,11 @@ export default function Home() {
 
       <div className="pt-16 text-center">
 
-        <h1 className="text-[8rem] font-light tracking-[0.20em] text-surface-dark">
+        <h1 className="text-[4rem] font-light tracking-[0.15em] text-surface-dark sm:text-[5rem] md:text-[8rem] md:tracking-[0.20em]">
           CALANOR
         </h1>
 
-        <p className="mt-2 text-6xl font-extralight tracking-[0.10em] text-accent">
+        <p className="mt-1 text-3xl font-extralight tracking-[0.10em] text-accent sm:text-4xl md:mt-2 md:text-6xl">
           ADVISORY
         </p>
 
@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       {/* Hero */}
-      <section className="pt-15">
+      <section className="pt-6 md:pt-15">
         <Hero />
       </section>
 
@@ -37,11 +37,12 @@ export default function Home() {
       {/* Solution */}
       <SolutionSection />
 
+      {/* WhyCalanor */}
+      <WhyCalanor />
+
       {/* Services */}
       <Services />
 
-      {/* WhyCalanor */}
-      <WhyCalanor />
 
       {/* PerspectiveSection */}
       <PerspectiveSection />

@@ -3,27 +3,29 @@ import FlowGraphic from "./FlowGraphic";
 
 export default function Hero() {
   return (
-    <section className="mx-auto mt-5 flex max-w-screen-2xl items-start justify-between px-8">
+    <section className="mx-auto mt-5 flex max-w-screen-2xl flex-col items-center justify-between px-6 md:mt-5 md:flex-row md:items-start md:px-8">
 
       {/* Linke Seite */}
-      <div className="max-w-[760px] -ml-20 flex-shrink-0">
+      <div className="max-w-[760px] md:-ml-20 md:flex-shrink-0">
 
-        <h1 className="text-6xl font-light leading-tight text-surface-dark">
-          Sie brauchen nicht noch mehr Daten.
-          Sie brauchen ein besseres {" "} <span className="text-accent">Steuerungsmodell.</span>
+        <h1 className="text-center text-2xl font-light leading-tight text-surface-dark sm:text-5xl md:text-left md:text-6xl">
+          Sie brauchen nicht noch <span className="text-accent">mehr Daten.</span>
+          <br className="hidden md:block" />
+          {" "}Sie brauchen ein besseres{" "}
+          <span className="text-accent-secondary">Steuerungsmodell.</span>
         </h1>
 
-        <p className="mt-2 max-w-[500px] text-xl font-light leading-relaxed text-text-primary">
-          Wir entwickeln Steuerungsmodelle für Unternehmen, 
-          <br /> 
-          mit denen die richtigen Informationen zur richtigen Zeit vorliegen.
-          Wir verbessern Ihre  <span className="text-accent-secondary">
-            {" "}Entscheidungsfähigkeit-{" "}
-          </span> 
-         
+        <p className="mx-auto mt-6 max-w-[500px] text-center text-base font-light leading-relaxed text-text-primary md:mx-0 md:mt-2 md:text-xl md:text-left">
+          Wir entwickeln Steuerungsmodelle für Unternehmen,
+          <br className="hidden md:block" />
+          {" "}mit denen die richtigen Informationen zur richtigen Zeit vorliegen.
+          Wir verbessern Ihre{" "}
+          <span className="text-accent-secondary">
+            Entscheidungsfähigkeit.
+          </span>
         </p>
 
-        {/* 
+        {/*
         <div className="mt-12">
           <Button text="Kontakt aufnehmen" />
         </div>
@@ -32,8 +34,8 @@ export default function Hero() {
       </div>
 
       {/* Rechte Seite */}
-      <div className="-mt-0.8  -ml-10 translate-x-8">
-          <FlowGraphic />
+      <div className="mt-6 flex justify-center md:mt-0 md:-ml-10 md:translate-x-8">
+        <FlowGraphic />
       </div>
 
     </section>

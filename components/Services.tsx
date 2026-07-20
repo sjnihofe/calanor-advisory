@@ -1,4 +1,7 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const services = [
   {
@@ -15,7 +18,6 @@ const services = [
     line: "/Goldline.svg",
     border: "border-l-accent-secondary",
     titleColor: "text-accent-secondary",
-    lineTop: "top-[210px]",
     numberColor: "text-accent-secondary",
   },
   {
@@ -32,7 +34,6 @@ const services = [
     line: "/Greyline.svg",
     border: "border-l-text-secondary",
     titleColor: "text-surface-dark",
-    lineTop: "top-[470px]",
     numberColor: "text-text-secondary",
   },
   {
@@ -49,24 +50,25 @@ const services = [
     line: "/Petrolline.svg",
     border: "border-l-accent",
     titleColor: "text-accent",
-    lineTop: "top-[735px]",
     numberColor: "text-accent",
   },
 ];
 
 export default function Services() {
+const [open, setOpen] = useState(0);
   return (
-    <section className="relative overflow-hidden bg-white">
-      <div className="mx-auto max-w-screen-2xl px-8 py-32">
+    <section className="relative overflow-hidden bg-background">
+      <div className="mx-auto max-w-screen-2xl px-6 py-20 md:px-8 md:py-32">
 
         {/* Heading */}
 
         <div className="text-center">
-          <p className="mb-6 text-sm uppercase tracking-[0.2em] text-text-secondary">
+
+          <p className="mb-4 text-sm uppercase tracking-[0.2em] text-text-secondary">
             Unsere Leistungen
           </p>
 
-          <h2 className="text-4xl font-light leading-tight text-surface-dark">
+          <h2 className="text-2xl font-light leading-tight text-surface-dark md:text-4xl">
             Drei Ausbaustufen.
           </h2>
 
@@ -74,11 +76,11 @@ export default function Services() {
 
         {/* Content */}
 
-        <div className="relative mt-16">
+        <div className="relative mt-12 md:mt-16">
 
-          {/* Großes C */}
+          {/* Großes C (nur Desktop) */}
 
-          <div className="pointer-events-none absolute -right-[1200px] top-[54.5%] z-0 -translate-y-1/2  opacity-100">
+          <div className="pointer-events-none absolute -right-[1200px] top-[54.5%] z-0 hidden -translate-y-1/2 opacity-100 md:block">
 
             <Image
               src="/Logo.svg"
@@ -91,41 +93,37 @@ export default function Services() {
 
           {/* Karten */}
 
-          <div className="relative z-20 space-y-6">
+          <div className="relative z-20 space-y-8">
 
-            {services.map((service) => (
+            {services.map((service, index) => (
               <div
                 key={service.title}
-                className="grid grid-cols-[130px_900px] items-center"
+                className="grid grid-cols-1 gap-4 md:grid-cols-[130px_900px] md:items-center"
               >
 
                 {/* Dauer */}
 
-                <div className="pr-10">
+                <div className="hidden text-center md:block md:pr-10">
 
-                  <div className="text-center">
-
-                    <p className={`text-5xl font-light ${service.numberColor}`}>
+                  <p className={`text-3xl font-light md:text-5xl ${service.numberColor}`}>
                     {service.duration.split(" ")[0]}
-                    </p>
+                  </p>
 
-                    <p className="mt-2 text-xl font-light text-text-secondary">
-                      Wochen
-                    </p>
-
-                  </div>
+                  <p className="mt-1 text-base font-light text-text-secondary md:mt-2 md:text-xl">
+                    Wochen
+                  </p>
 
                 </div>
 
                 {/* Karte */}
 
                 <div
-                  className={`relative border border-text-secondary/20 border-l-8 bg-white p-5 ${service.border}`}
+                  className={`relative border border-text-secondary/20 border-l-4 bg-background p-6 md:border-l-8 md:p-5 ${service.border}`}
                 >
 
-                  {/* Linie */}
+                  {/* Desktop-Verbindungslinie */}
 
-                  <div className="pointer-events-none absolute left-full top-1/2 z-10 -translate-y-1/2">
+                  <div className="pointer-events-none absolute left-full top-1/2 z-10 hidden -translate-y-1/2 md:block">
 
                     <Image
                       src={service.line}
@@ -136,7 +134,67 @@ export default function Services() {
 
                   </div>
 
-                  <div className="grid grid-cols-[1.3fr_0.7fr] gap-12">
+                  {/* Mobile Accordion Header */}
+
+                  <button
+                    onClick={() => setOpen(open === index ? -1 : index)}
+                    className="flex w-full items-center justify-between md:hidden"
+                  >
+
+                    <h3 className={`text-left text-xl font-light ${service.titleColor}`}>
+                    {service.title}
+
+                    <span className="mt-1 block text-sm font-light text-text-secondary">
+                      ({service.duration})
+                    </span>
+                  </h3>
+
+                    <ChevronDown
+                      className={`h-5 w-5 text-text-secondary transition-transform duration-300 ${
+                        open === index ? "rotate-180" : ""
+                      }`}
+                    />
+
+                  </button>
+
+                  {/* Mobile Content */}
+
+                  {open === index && (
+
+                    <div className="mt-6 md:hidden">
+
+                      <p className="text-sm font-light leading-6 text-text-secondary">
+                        {service.description}
+                      </p>
+
+                      <div className="mt-6">
+
+                        <p className="mb-2 text-[11px] uppercase tracking-[0.18em] text-surface-dark">
+                          Liefergegenstände
+                        </p>
+
+                        <ul className="space-y-2">
+
+                          {service.deliverables.map((item) => (
+                          <li
+                            key={item}
+                            className="border-b border-text-secondary/20 pb-2 text-sm font-light text-surface-dark"
+                          >
+                              {item}
+                            </li>
+                          ))}
+
+                        </ul>
+
+                      </div>
+
+                    </div>
+
+                  )}
+
+                  {/* Desktop */}
+
+                  <div className="hidden md:grid md:grid-cols-[1.3fr_0.7fr] md:gap-12">
 
                     <div>
 
@@ -170,6 +228,8 @@ export default function Services() {
                         ))}
 
                       </ul>
+
+                      
 
                     </div>
 

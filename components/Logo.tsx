@@ -2,9 +2,13 @@ import Image from "next/image";
 
 type LogoProps = {
   size?: number;
+  className?: string;
 };
 
-export default function Logo({ size = 72 }: LogoProps) {
+export default function Logo({
+  size = 72,
+  className = "",
+}: LogoProps) {
   return (
     <Image
       src="/Logo.svg"
@@ -12,6 +16,7 @@ export default function Logo({ size = 72 }: LogoProps) {
       width={size}
       height={size}
       priority
+      className={className}
     />
   );
 }

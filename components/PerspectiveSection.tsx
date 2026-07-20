@@ -1,7 +1,7 @@
 export default function PerspectiveSection() {
   return (
-    <section className="bg-surface py-32">
-      <div className="mx-auto max-w-6xl px-8">
+    <section className="bg-surface py-20 md:py-32">
+      <div className="mx-auto max-w-6xl px-6 md:px-8">
 
         {/* Heading */}
 
@@ -11,24 +11,26 @@ export default function PerspectiveSection() {
             WAS ZEICHNET CALANOR AUS?
           </p>
 
-          <h2 className="text-5xl font-light leading-tight text-surface-dark">
-            Über {" "} <span className="text-accent-secondary">8 Jahre</span> {" "} praktische Erfahrung
-            <br />
-            in der {" "} <span className="text-accent">Projektsteuerung</span> {" "} und {" "}
-            <span className="text-accent">strategischen Transformationsprojekten.</span>
+          <h2 className="mt-8 text-[20px] font-light leading-tight text-surface-dark sm:text-4xl md:text-5xl">
+            Über <span className="text-accent-secondary">8 Jahre</span> praktische Erfahrung
+            <br className="hidden md:block" />
+            {" "}in der <span className="text-accent">Projektsteuerung</span> und{" "}
+            <span className="text-accent">
+              strategischen Transformationsprojekten.
+            </span>
           </h2>
 
         </div>
 
         {/* Content */}
 
-        <div className="mt-24 grid grid-cols-[1.2fr_0.8fr] gap-24">
+        <div className="mt-6 grid grid-cols-1 gap-6 md:mt-24 md:grid-cols-[1.2fr_0.8fr] md:gap-24">
 
           {/* Left */}
 
-          <div>
+          <div className="text-center md:text-left">
 
-            <p className="text-3xl font-light leading-relaxed text-surface-dark">
+            <p className="text-[16px] font-light leading-relaxed text-surface-dark md:text-3xl">
 
               Gute Entscheidungen entstehen dort,
               wo <span className="text-accent-secondary">Strategie</span>,
@@ -38,55 +40,41 @@ export default function PerspectiveSection() {
 
             </p>
 
-            <div className="mt-12 space-y-8 text-xl leading-9 text-text-secondary">
-
+            <div className="mt-6 space-y-6 text-sm leading-8 text-text-secondary md:mt-12 md:space-y-8 md:text-xl md:leading-9">
 
               <p className="text-surface-dark">
-
-                Wir kennen die Perspektiven vom Vorstand bis zur operativen Umsetzung. 
-
+                Wir kennen die Perspektiven vom Vorstand bis zur operativen Umsetzung.
               </p>
 
             </div>
 
-
-            {/*
-            <p className="mt-10 text-xl leading-9 text-text-secondary">
-
-                Deshalb entwickeln wir Informationslogik,
-                die fachlich überzeugt,
-                organisatorisch funktioniert
-                und technisch umgesetzt werden kann.
-
-            </p>*/}
-
-          </div>  
+          </div>
 
           {/* Right */}
-        
 
+          <div className="mt-0 text-center border-t border-border pt-5 md:border-l md:border-t-0 md:pl-12 md:pt-0">
 
-          <div className="border-l border-border pl-12">
+            <div>
 
-
-            
-            <div className="mt-0">
-
-              <p className="text-sm uppercase tracking-[0.25em] text-text-secondary">
+              <p className="mt-2 text-sm uppercase tracking-[0.25em] text-text-secondary">
                 VOLKSWAGEN
               </p>
 
               <div className="mt-5 space-y-2">
 
-                <p className="text-lg text-accent-secondary">
+                <p className="text-base text-accent-secondary md:text-lg">
                   Strategische Neuausrichtung
                 </p>
 
-                <p className="text-lg text-accent">
+                <p className="text-base text-accent md:text-lg">
                   IT-Projektleitung
                 </p>
-                
-            <div className="mt-12">
+
+              </div>
+
+            </div>
+
+            <div className="mt-6">
 
               <p className="text-sm uppercase tracking-[0.25em] text-text-secondary">
                 AUDI
@@ -94,18 +82,13 @@ export default function PerspectiveSection() {
 
               <div className="mt-5 space-y-2">
 
-                <p className="text-lg text-text-secondary">
+                <p className="text-base text-text-secondary md:text-lg">
                   Projektcontrolling
                 </p>
 
-                <p className="text-lg text-accent-secondary">
+                <p className="text-base text-accent-secondary md:text-lg">
                   Transformationsprojekt
                 </p>
-
-              </div>
-
-            </div>
-
 
               </div>
 
