@@ -1,6 +1,12 @@
-import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+
+import type { Metadata, Viewport } from "next";
+
+export const viewport: Viewport = {
+  width: "dgitevice-width",
+  initialScale: 1,
+};
 
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
