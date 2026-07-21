@@ -19,7 +19,7 @@ const [open, setOpen] = useState(0);
     {
       number: "03",
       title: "Steuerungslogik entwickeln",
-      text: "Wir entwickeln eine Steuerungslogik und verbinden Daten, Prozesse und Verantwortlichkeiten.",
+      text: "Wir entwickeln eine Steuerungslogik und Datenstrategien für bessere Managemententscheidungen.",
     },
     {
       number: "04",
@@ -104,7 +104,7 @@ const [open, setOpen] = useState(0);
                       {step.number === "04" ? (
 
                         <p className="text-sm font-light leading-7 text-text-secondary">
-                          Mit einem Proof of Concept validieren wir den Nutzen{" "}
+                          Mit einem Proof of  Concept validieren wir den Nutzen{" "}
                           <span className="text-accent-secondary">
                             bevor Geld in IT-Tools investiert wird.
                           </span>
