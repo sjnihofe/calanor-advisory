@@ -9,25 +9,22 @@ import ContactSection from "../components/ContactSection";
 
 export default function Home() {
   return (
-    <main className="bg-background">
-      
+    <main className="overflow-x-hidden bg-background">
 
       <div className="pt-16 text-center">
 
-        <h1 className="text-[4rem] font-light tracking-[0.15em] text-surface-dark sm:text-[5rem] md:text-[8rem] md:tracking-[0.20em]">
+        <h1 className="text-[4rem] font-light tracking-[0.15em] text-surface-dark sm:text-[5rem] lg:text-[8rem] lg:tracking-[0.20em]">
           CALANOR
         </h1>
 
-        <p className="mt-1 text-3xl font-extralight tracking-[0.10em] text-accent sm:text-4xl md:mt-2 md:text-6xl">
+        <p className="mt-1 text-3xl font-extralight tracking-[0.10em] text-accent sm:text-4xl lg:mt-2 lg:text-6xl">
           ADVISORY
         </p>
-
-     
 
       </div>
 
       {/* Hero */}
-      <section className="pt-6 md:pt-15">
+      <section className="pt-6 lg:pt-15">
         <Hero />
       </section>
 
@@ -42,7 +39,6 @@ export default function Home() {
 
       {/* Services */}
       <Services />
-
 
       {/* PerspectiveSection */}
       <PerspectiveSection />

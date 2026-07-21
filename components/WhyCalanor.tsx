@@ -1,6 +1,6 @@
 export default function WhyCalanor() {
   return (
-    <section className="bg-surface pt-32 pb-16 md:pb-54">
+    <section className="bg-surface pt-32 pb-16 lg:pb-54">
       <div className="mx-auto max-w-7xl px-8">
 
         {/* Heading */}
@@ -13,7 +13,7 @@ export default function WhyCalanor() {
 
         {/* Desktop */}
 
-        <h2 className="hidden text-5xl font-light leading-tight text-surface-dark md:block">
+        <h2 className="hidden text-5xl font-light leading-tight text-surface-dark lg:block">
           <span className="text-accent-secondary">Strategien</span>{" "}
           scheitern nicht an Ideen, sondern an der{" "}
           <span className="text-accent">Umsetzung</span>{" "}
@@ -22,7 +22,7 @@ export default function WhyCalanor() {
 
         {/* Mobile */}
 
-        <h2 className="text-2xl font-light leading-tight text-surface-dark md:hidden">
+        <h2 className="text-2xl font-light leading-tight text-surface-dark lg:hidden">
           <span className="text-accent-secondary">Strategien</span>{" "}
           scheitern nicht an Ideen,
           sondern an der{" "}
@@ -38,7 +38,7 @@ export default function WhyCalanor() {
           {/* Desktop                         */}
           {/* ------------------------------- */}
 
-          <div className="mt-48 hidden md:grid grid-cols-[240px_1fr_240px] items-center">
+          <div className="mt-48 hidden lg:grid grid-cols-[240px_1fr_240px] items-center">
 
             {/* Strategie */}
 
@@ -153,7 +153,7 @@ export default function WhyCalanor() {
           {/* Mobile                          */}
           {/* ------------------------------- */}
 
-          <div className="mt-6 md:hidden">
+          <div className="mt-6 lg:hidden">
 
             {/* Schaubild */}
 

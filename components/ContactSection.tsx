@@ -4,14 +4,13 @@ export default function ContactSection() {
       <div className="mx-auto max-w-6xl px-8">
 
         {/* Trennlinie */}
-
         <div className="h-px w-full bg-border" />
 
         {/* -------------------------------- */}
         {/* Desktop CTA                      */}
         {/* -------------------------------- */}
 
-        <div className="mx-auto hidden max-w-4xl pt-12 pb-24 text-center md:block">
+        <div className="mx-auto hidden max-w-4xl pt-12 pb-24 text-center lg:block">
 
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-text-secondary">
             KONTAKT
@@ -41,7 +40,7 @@ export default function ContactSection() {
         {/* Mobile CTA                       */}
         {/* -------------------------------- */}
 
-        <div className="mx-auto max-w-md pt-10 pb-16 text-center md:hidden">
+        <div className="mx-auto max-w-md pt-10 pb-16 text-center lg:hidden">
 
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-text-secondary">
             KONTAKT
@@ -73,7 +72,7 @@ export default function ContactSection() {
         {/* Desktop Kontakt                  */}
         {/* -------------------------------- */}
 
-        <div className="hidden grid-cols-2 gap-12 border-t border-border py-16 md:grid">
+        <div className="hidden grid-cols-2 gap-12 border-t border-border py-16 lg:grid">
 
           <div>
 
@@ -111,7 +110,7 @@ export default function ContactSection() {
         {/* Mobile Kontakt                   */}
         {/* -------------------------------- */}
 
-        <div className="border-t border-border py-10 md:hidden">
+        <div className="border-t border-border py-10 lg:hidden">
 
           <div className="space-y-10 text-center">
 
@@ -123,7 +122,7 @@ export default function ContactSection() {
 
               <a
                 href="mailto:niklas.hofeditz@calanor-advisory.com"
-                className="text-lg font-light text-surface-dark transition-colors hover:text-accent"
+                className="text-lg font-light break-all text-surface-dark transition-colors hover:text-accent"
               >
                 niklas.hofeditz@calanor-advisory.com
               </a>
@@ -153,7 +152,7 @@ export default function ContactSection() {
         {/* Desktop Footer                   */}
         {/* -------------------------------- */}
 
-        <div className="hidden items-center justify-between border-t border-border py-8 md:flex">
+        <div className="hidden items-center justify-between border-t border-border py-8 lg:flex">
 
           <p className="text-sm text-text-secondary">
             © {new Date().getFullYear()} CALANOR ADVISORY
@@ -183,7 +182,7 @@ export default function ContactSection() {
         {/* Mobile Footer                    */}
         {/* -------------------------------- */}
 
-        <div className="border-t border-border py-8 text-center md:hidden">
+        <div className="border-t border-border py-8 text-center lg:hidden">
 
           <p className="text-sm text-text-secondary">
             © {new Date().getFullYear()} CALANOR ADVISORY

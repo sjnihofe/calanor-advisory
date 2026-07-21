@@ -34,7 +34,7 @@ const [open, setOpen] = useState(0);
 
   return (
     <section className="bg-background">
-      <div className="mx-auto max-w-screen-2xl px-6 py-20 md:px-8 md:py-32">
+      <div className="mx-auto max-w-screen-2xl px-6 py-20 lg:px-8 lg:py-32">
 
         {/* Heading */}
 
@@ -44,9 +44,9 @@ const [open, setOpen] = useState(0);
             Unser Ansatz
           </p>
 
-          <h2 className="text-2xl font-light leading-tight text-surface-dark sm:text-4xl md:text-5xl">
+          <h2 className="text-2xl font-light leading-tight text-surface-dark sm:text-4xl lg:text-5xl">
             In <span className="text-accent">fünf</span> Schritten
-            <br className="hidden md:block" />
+            <br className="hidden lg:block" />
             zu besseren Entscheidungen.
             <span className="text-accent-secondary"> Ohne Risiko.</span>
           </h2>
@@ -55,14 +55,14 @@ const [open, setOpen] = useState(0);
 
         {/* Steps */}
 
-        <div className="mt-10 space-y-2 md:mt-24 md:grid md:grid-cols-5 md:gap-12 md:space-y-0">
+        <div className="mt-10 space-y-2 lg:mt-24 lg:grid lg:grid-cols-5 lg:gap-12 lg:space-y-0">
 
           {steps.map((step, index) => (
             <div key={step.number} className="relative">
 
               {/* Mobile */}
 
-              <div className="md:hidden">
+              <div className="lg:hidden">
 
               <div className="flex items-start gap-5">
 
@@ -130,7 +130,7 @@ const [open, setOpen] = useState(0);
 
               {/* Desktop */}
 
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
 
                 <div className="mb-8 flex items-center">
 

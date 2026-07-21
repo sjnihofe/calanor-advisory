@@ -58,7 +58,7 @@ export default function Services() {
 const [open, setOpen] = useState(0);
   return (
     <section className="relative overflow-hidden bg-background">
-      <div className="mx-auto max-w-screen-2xl px-6 py-20 md:px-8 md:py-32">
+      <div className="mx-auto max-w-screen-2xl px-6 py-20 lg:px-8 lg:py-32">
 
         {/* Heading */}
 
@@ -68,7 +68,7 @@ const [open, setOpen] = useState(0);
             Unsere Leistungen
           </p>
 
-          <h2 className="text-2xl font-light leading-tight text-surface-dark md:text-4xl">
+          <h2 className="text-2xl font-light leading-tight text-surface-dark lg:text-4xl">
             Drei Ausbaustufen.
           </h2>
 
@@ -76,11 +76,11 @@ const [open, setOpen] = useState(0);
 
         {/* Content */}
 
-        <div className="relative mt-12 md:mt-16">
+        <div className="relative mt-12 lg:mt-16">
 
           {/* Großes C (nur Desktop) */}
 
-          <div className="pointer-events-none absolute -right-[1200px] top-[54.5%] z-0 hidden -translate-y-1/2 opacity-100 md:block">
+          <div className="pointer-events-none absolute -right-[1200px] top-[54.5%] z-0 hidden -translate-y-1/2 opacity-100 lg:block">
 
             <Image
               src="/Logo.svg"
@@ -98,18 +98,18 @@ const [open, setOpen] = useState(0);
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className="grid grid-cols-1 gap-4 md:grid-cols-[130px_900px] md:items-center"
+                className="grid grid-cols-1 gap-4 lg:grid-cols-[130px_900px] lg:items-center"
               >
 
                 {/* Dauer */}
 
-                <div className="hidden text-center md:block md:pr-10">
+                <div className="hidden text-center lg:block lg:pr-10">
 
                   <p className={`text-3xl font-light md:text-5xl ${service.numberColor}`}>
                     {service.duration.split(" ")[0]}
                   </p>
 
-                  <p className="mt-1 text-base font-light text-text-secondary md:mt-2 md:text-xl">
+                  <p className="mt-1 text-base font-light text-text-secondary lg:mt-2 lg:text-xl">
                     Wochen
                   </p>
 
@@ -118,12 +118,12 @@ const [open, setOpen] = useState(0);
                 {/* Karte */}
 
                 <div
-                  className={`relative border border-text-secondary/20 border-l-4 bg-background p-6 md:border-l-8 md:p-5 ${service.border}`}
+                  className={`relative border border-text-secondary/20 border-l-4 bg-background p-6 lg:border-l-8 lg:p-5 ${service.border}`}
                 >
 
                   {/* Desktop-Verbindungslinie */}
 
-                  <div className="pointer-events-none absolute left-full top-1/2 z-10 hidden -translate-y-1/2 md:block">
+                  <div className="pointer-events-none absolute left-full top-1/2 z-10 hidden -translate-y-1/2 lg:block">
 
                     <Image
                       src={service.line}
@@ -138,7 +138,7 @@ const [open, setOpen] = useState(0);
 
                   <button
                     onClick={() => setOpen(open === index ? -1 : index)}
-                    className="flex w-full items-center justify-between md:hidden"
+                    className="flex w-full items-center justify-between lg:hidden"
                   >
 
                     <h3 className={`text-left text-xl font-light ${service.titleColor}`}>
@@ -161,7 +161,7 @@ const [open, setOpen] = useState(0);
 
                   {open === index && (
 
-                    <div className="mt-6 md:hidden">
+                    <div className="mt-6 lg:hidden">
 
                       <p className="text-sm font-light leading-6 text-text-secondary">
                         {service.description}
@@ -194,7 +194,7 @@ const [open, setOpen] = useState(0);
 
                   {/* Desktop */}
 
-                  <div className="hidden md:grid md:grid-cols-[1.3fr_0.7fr] md:gap-12">
+                  <div className="hidden lg:grid lg:grid-cols-[1.3fr_0.7fr] lg:gap-12">
 
                     <div>
 

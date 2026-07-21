@@ -8,16 +8,16 @@ import {
 
 export default function ProblemSection() {
   return (
-    <section className="mt-20 bg-surface md:mt-40">
-      <div className="mx-auto max-w-screen-2xl px-6 py-16 md:px-8 md:py-24">
-        <div className="grid grid-cols-1 gap-12 md:-ml-20 md:grid-cols-[1.7fr_1fr]">
+    <section className="mt-20 bg-surface lg:mt-40"> 
+      <div className="mx-auto max-w-screen-2xl px-6 py-16 lg:px-8 lg:py-24">
+        <div className="grid grid-cols-1 gap-12 lg:-ml-20 lg:grid-cols-[1.7fr_1fr]">
 
           {/* Linke Seite */}
-        <div className="py-0 md:py-10">
+        <div className="py-0 lg:py-10">
 
         {/* ---------- Mobile ---------- */}
 
-        <div className="md:hidden text-center">
+        <div className="lg:hidden text-center">
 
             <p className="mb-6 text-sm uppercase tracking-[0.2em] text-text-secondary">
             Das Problem
@@ -68,7 +68,7 @@ export default function ProblemSection() {
 
         {/* ---------- Desktop ---------- */}
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
 
             <p className="mb-6 text-sm uppercase tracking-[0.2em] text-text-secondary">
             Das Problem
@@ -140,21 +140,21 @@ export default function ProblemSection() {
         </div>
 
           {/* Rechte Seite */}
-          <div className="bg-surface-dark p-8 text-center text-white md:p-12 md:text-left">
+          <div className="bg-surface-dark p-8 text-center text-white lg:p-12 lg:text-left">
 
             <p className="mb-6 text-sm uppercase tracking-[0.2em] opacity-80">
               Unsere Versprechen
             </p>
 
-            <h3 className="text-[20px] font-light leading-tight md:text-4xl">
+            <h3 className="text-[20px] font-light leading-tight lg:text-4xl">
               Die richtigen Informationen,
-              <br className="hidden md:block" />
+              <br className="hidden lg:block" />
               <span className="text-accent-secondary"> adressatengerecht </span>
               und
               <span className="text-accent-secondary"> automatisiert.</span>
             </h3>
 
-            <ul className="mt-5 space-y-5 text-[14px] font-light md:mt-12 md:text-lg">
+            <ul className="mt-5 space-y-5 text-[14px] font-light lg:mt-12 lg:text-lg">
               <li>✓ Bessere Entscheidungen</li>
               <li>✓ Klarheit über das Wesentliche</li>
               <li>✓ Transparente Informationen</li>
