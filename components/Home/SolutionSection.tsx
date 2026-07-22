@@ -33,7 +33,7 @@ const [open, setOpen] = useState(0);
   ];
 
   return (
-    <section className="bg-background">
+    <section className="bg-surface">
       <div className="mx-auto max-w-screen-2xl px-6 py-20 lg:px-8 lg:py-32">
 
         {/* Heading */}

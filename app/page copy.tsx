@@ -7,7 +7,6 @@ import WhyCalanor from "@/components/Home/WhyCalanor";
 import PerspectiveSection from "@/components/Home/PerspectiveSection";
 import ContactSection from "@/components/Home/ContactSection";
 
-
 export default function Home() {
   return (
     <>
@@ -34,17 +33,15 @@ export default function Home() {
 
         <ProblemSection />
 
-        <WhyCalanor />
-
         <SolutionSection />
+
+        <WhyCalanor />
 
         <Services />
 
         <PerspectiveSection />
 
         <ContactSection />
-
-        
 
       </main>
     </>

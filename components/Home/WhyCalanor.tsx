@@ -1,246 +1,217 @@
 export default function WhyCalanor() {
   return (
-    <section className="bg-surface pt-32 pb-16 lg:pb-54">
-      <div className="mx-auto max-w-7xl px-8">
+    <section className="bg-background py-16 sm:py-20 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* Heading */}
 
-       <div className="mx-auto max-w-4xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
 
-        <p className="mb-4 text-sm uppercase tracking-[0.35em] text-text-secondary">
-          WARUM CALANOR?
-        </p>
+          <p className="mb-5 text-xs uppercase tracking-[0.35em] text-text-secondary sm:text-sm">
+            WARUM CALANOR?
+          </p>
 
-        {/* Desktop */}
+          <h2 className="mx-auto max-w-4xl text-3xl font-light leading-snug text-surface-dark sm:text-4xl lg:text-5xl">
 
-        <h2 className="hidden text-5xl font-light leading-tight text-surface-dark lg:block">
-          <span className="text-accent-secondary">Strategien</span>{" "}
-          scheitern nicht an Ideen, sondern an der{" "}
-          <span className="text-accent">Umsetzung</span>{" "}
-          in der Praxis.
-        </h2>
+            Effiziente Entscheidungen scheitern nicht an{" "}
 
-        {/* Mobile */}
+            <span className="text-accent-secondary">
+              Strategien
+            </span>
 
-        <h2 className="text-2xl font-light leading-tight text-surface-dark lg:hidden">
-          <span className="text-accent-secondary">Strategien</span>{" "}
-          scheitern nicht an Ideen,
-          sondern an der{" "}
-          <span className="text-accent">Umsetzung</span>
-          in der Praxis.
-        </h2>
+            ,{" "}
 
-      </div>
-        {/* Graphic */}
+            <span className="text-text-secondary">
+              Controlling
+            </span>
 
-        <>
-          {/* ------------------------------- */}
-          {/* Desktop                         */}
-          {/* ------------------------------- */}
+            {" "}oder{" "}
 
-          <div className="mt-48 hidden lg:grid grid-cols-[240px_1fr_240px] items-center">
+            <span className="text-accent">
+              IT-Tools
+            </span>
 
-            {/* Strategie */}
+            .
 
-            <div>
+          </h2>
 
-              <p className="mb-10 text-sm uppercase tracking-[0.28em] text-accent-secondary">
-                STRATEGIE
-              </p>
+        </div>
 
-              <div className="space-y-8">
+        {/* Intro */}
 
-                <p className="text-3xl font-light text-surface-dark">
-                  Vision
-                </p>
+        <div className="mx-auto mt-8 max-w-2xl text-center lg:mt-10 lg:max-w-4xl">
 
-                <p className="text-3xl font-light text-surface-dark">
-                  Ziele
-                </p>
+          <p className="text-base font-light leading-8 text-text-secondary sm:text-lg lg:text-xl lg:leading-9">
 
-                <p className="text-3xl font-light text-surface-dark">
-                  Organisation
-                </p>
+            Strategien entstehen in Workshops. Software entsteht in IT-Projekten.
 
-              </div>
+            <br className="hidden sm:block" />
 
-            </div>
+            Dashboards entstehen im Controlling – doch nur selten greifen diese drei Welten wirklich ineinander.
 
-            {/* Mittelpunkt */}
+          </p>
 
-            <div className="relative flex h-[300px] items-center justify-center">
+        </div>
 
-              <img
-                src="/Logo.svg"
-                alt=""
-                className="pointer-events-none absolute left-[40%] top-[55.5%] w-[700px] max-w-none -translate-x-1/2 -translate-y-1/2 select-none opacity-60"
-              />
+        {/* Cards */}
 
-              <div
-                className="
-                  absolute
-                  left-[-70px]
-                  top-1/2
-                  z-[5]
-                  h-[300px]
-                  w-[140px]
-                  -translate-y-1/2
-                  bg-surface
-                "
-              />
+        <div className="mx-auto mt-10 grid max-w-6xl gap-5 lg:mt-14 lg:grid-cols-3">
 
-              <div className="relative z-10 w-[460px] -translate-x-3 border border-border bg-surface/98 px-16 py-6 text-center">
+          {/* Strategie */}
 
-                <h3 className="text-3xl font-light tracking-[0.20em] text-surface-dark">
-                  CALANOR
-                </h3>
+          <div className="border border-text-secondary/20 border-l-4 border-l-accent-secondary bg-background p-5 sm:p-6 lg:border-l-8">
 
-                <p className="mt-1 text-lg font-extralight tracking-[0.10em] text-accent">
-                  ADVISORY
-                </p>
+            <h3 className="text-lg font-light sm:text-xl">
 
-                <div className="mx-auto my-8 h-px w-20 bg-surface-dark" />
+              <span className="uppercase tracking-[0.15em] text-accent-secondary">
+                Strategie
+              </span>
 
-                <p className="text-3xl font-light leading-relaxed text-surface-dark">
-                  Wir übersetzen{" "}
-                  <span className="text-accent-secondary">
-                    Strategie
-                  </span>{" "}
-                  in{" "}
-                  <span className="text-text-secondary">
-                    Informationslogik
-                  </span>.
-                  <br />
-                  <br />
-                  <span className="text-accent">
-                    Proof of Concept.
-                  </span>
-                </p>
+              <span className="mx-2 text-text-secondary">|</span>
 
-              </div>
+              <span className="text-surface-dark">
+                Entscheidungen
+              </span>
 
-            </div>
+            </h3>
 
-            {/* Umsetzung */}
+            <p className="mt-4 text-sm leading-7 text-text-secondary sm:text-base">
 
-            <div className="text-right">
+              Welche Entscheidungen müssen getroffen werden, damit sich das Unternehmen erfolgreich entwickelt?
 
-              <p className="mb-10 text-sm uppercase tracking-[0.28em] text-accent">
-                UMSETZUNG &amp; IT
-              </p>
-
-              <div className="space-y-8">
-
-                <p className="text-3xl font-light text-surface-dark">
-                  Prozesse
-                </p>
-
-                <p className="text-3xl font-light text-surface-dark">
-                  Software
-                </p>
-
-                <p className="text-3xl font-light text-surface-dark">
-                  Dashboards
-                </p>
-
-              </div>
-
-            </div>
+            </p>
 
           </div>
 
-          {/* ------------------------------- */}
-          {/* Mobile                          */}
-          {/* ------------------------------- */}
+          {/* Controlling */}
 
-          <div className="mt-6 lg:hidden">
+          <div className="border border-text-secondary/20 border-l-4 border-l-text-secondary bg-background p-5 sm:p-6 lg:border-l-8">
 
-            {/* Schaubild */}
+            <h3 className="text-lg font-light sm:text-xl">
 
-            <div className="mx-auto flex w-full max-w-sm items-center justify-center">
+              <span className="uppercase tracking-[0.15em] text-text-secondary">
+                Controlling
+              </span>
 
-              {/* Strategie */}
+              <span className="mx-2 text-text-secondary">|</span>
 
-              <div className="mr-3 flex h-[220px] items-center justify-center">
+              <span className="text-surface-dark">
+                Informationen
+              </span>
 
-                <p
-                  className="
-                    whitespace-nowrap
-                    text-sm
-                    font-light
-                    uppercase
-                    tracking-[0.35em]
-                    text-accent-secondary
-                    [writing-mode:vertical-rl]
-                    rotate-180
-                  "
-                >
-                  Strategie
-                </p>
+            </h3>
 
-              </div>
+            <p className="mt-4 text-sm leading-7 text-text-secondary sm:text-base">
 
-              {/* Logo */}
+              Welche Informationen werden benötigt, um fundierte Entscheidungen treffen zu können?
 
-              <img
-                src="/Logo.svg"
-                alt=""
-                className="
-                  w-[240px]
-                  select-none
-                  pointer-events-none
-                "
-              />
-
-              {/* Umsetzung */}
-
-              <div className="ml-3 flex h-[220px] items-center justify-center">
-
-                <p
-                  className="
-                    whitespace-nowrap
-                    text-sm
-                    font-light
-                    uppercase
-                    tracking-[0.35em]
-                    text-accent
-                    [writing-mode:vertical-rl]
-                    rotate-180
-                  "
-                >
-                  Umsetzung &amp; IT
-                </p>
-
-              </div>
-
-            </div>
-
-            {/* Box */}
-
-            <div className="mt-2 text-center">
-
-              <div className="mx-auto my-6 h-px w-16 bg-surface-dark" />
-
-              <p className="text-xl font-light leading-relaxed text-surface-dark">
-                Wir übersetzen{" "}
-                <span className="text-accent-secondary">
-                  Strategie
-                </span>{" "}
-                in{" "}
-                <span className="text-text-secondary">
-                  Informationslogik
-                </span>.
-                
-                <br />
-                <span className="text-accent">
-                  Proof of Concept.
-                </span>
-              </p>
-
-            </div>
+            </p>
 
           </div>
-        </>
+
+          {/* IT */}
+
+          <div className="border border-text-secondary/20 border-l-4 border-l-accent bg-background p-5 sm:p-6 lg:border-l-8">
+
+            <h3 className="text-lg font-light sm:text-xl">
+
+              <span className="uppercase tracking-[0.15em] text-accent">
+                IT
+              </span>
+
+              <span className="mx-2 text-text-secondary">|</span>
+
+              <span className="text-surface-dark">
+                Umsetzung
+              </span>
+
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-text-secondary sm:text-base">
+
+              Wie entstehen diese Informationen automatisiert durch Prozesse, Datenmodelle und IT?
+
+            </p>
+
+          </div>
+
+        </div>
+        {/* Funnel */}
+
+        <div className="relative mx-auto mt-10 hidden h-40 max-w-6xl lg:block">
+
+          {/* Gold */}
+
+          <div
+            className="absolute left-[16.5%] top-0 h-32 w-[2px] origin-top bg-accent-secondary"
+            style={{ transform: "rotate(-28deg)" }}
+          />
+
+          {/* Grau */}
+
+          <div className="absolute left-1/2 top-0 h-32 w-[2px] -translate-x-1/2 bg-text-secondary" />
+
+          {/* Petrol */}
+
+          <div
+            className="absolute right-[16.5%] top-0 h-32 w-[2px] origin-top bg-accent"
+            style={{ transform: "rotate(28deg)" }}
+          />
+
+        </div>
+
+        {/* Calanor */}
+
+        <div className="mx-auto mt-10 max-w-4xl border border-border bg-white px-6 py-10 text-center sm:px-8 sm:py-12 lg:-mt-2 lg:px-20 lg:py-14">
+
+          <p className="text-xs uppercase tracking-[0.3em] text-text-secondary sm:text-sm">
+            CALANOR ADVISORY
+          </p>
+
+          <h3 className="mt-5 text-xl font-light leading-snug text-surface-dark sm:text-2xl lg:text-3xl">
+
+            Wir verbinden{" "}
+
+            <span className="text-accent-secondary">
+              Strategie
+            </span>
+
+            ,{" "}
+
+            <span className="text-text-secondary">
+              Controlling
+            </span>
+
+            {" "}und{" "}
+
+            <span className="text-accent">
+              IT
+            </span>
+
+            .
+
+          </h3>
+
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-text-secondary lg:text-lg">
+
+            Durch unsere praktische Erfahrung in allen drei Bereichen wissen
+            wir, worauf es ankommt. Anders als klassische Strategieberater
+            hören wir nicht mit Handlungsempfehlungen auf und anders als
+            IT-Berater fangen wir nicht mit der Technik an.
+
+          </p>
+
+          <p className="mx-auto mt-8 max-w-2xl text-xl font-light leading-8 text-surface-dark sm:text-2xl lg:text-3xl">
+
+            Wir beginnen mit Ihren Entscheidungen.
+
+            <br />
+
+            Und wir hören erst mit einem funktionierenden Proof of Concept auf.
+
+          </p>
+
+        </div>
 
       </div>
     </section>

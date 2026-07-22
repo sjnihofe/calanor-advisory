@@ -38,7 +38,7 @@ const services = [
   },
   {
     color: "petrol",
-    duration: "4–8 Wochen",
+    duration: "1–2 Wochen",
     title: "Proof of Concept",
     description:
       "Wir validieren das Steuerungsmodell mit einem interaktiven Prototyp und erstellen eine Roadmap für die technische Umsetzung.",

@@ -44,26 +44,16 @@ export default function Header() {
 
         <div className="hidden items-center gap-14 lg:flex">
           <nav className="flex items-center gap-12">
-            <Link
-              href="/"
-              className="text-[17px] font-light text-surface-dark transition-colors hover:text-accent"
-            >
-              Leistungen
-            </Link>
+
 
             <Link
               href="/about"
               className="text-[17px] font-light text-surface-dark transition-colors hover:text-accent"
             >
-              Geschichte
+              Über uns
             </Link>
 
-            <Link
-              href="/projects"
-              className="text-[17px] font-light text-surface-dark transition-colors hover:text-accent"
-            >
-              Projekte
-            </Link>
+
           </nav>
 
           <Link
@@ -111,27 +101,11 @@ export default function Header() {
         <nav className="flex flex-col px-6 py-6">
 
           <Link
-            href="/"
-            onClick={closeMenu}
-            className="py-4 text-lg font-light text-surface-dark"
-          >
-            Leistungen
-          </Link>
-
-          <Link
             href="/about"
             onClick={closeMenu}
             className="py-4 text-lg font-light text-surface-dark"
           >
-            Geschichte
-          </Link>
-
-          <Link
-            href="/projects"
-            onClick={closeMenu}
-            className="py-4 text-lg font-light text-surface-dark"
-          >
-            Projekte
+            Über uns
           </Link>
 
           <Link
