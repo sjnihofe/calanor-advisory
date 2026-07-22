@@ -15,7 +15,7 @@ const timeline = [
     company: "Audi",
     period: "Echter Impact",
     title: "Die meisten Daten lassen sich auf der richtigen Ebene vernetzen.",
-    text: "Bei Audi gab es bereits viele Daten. Dabei hat jedoch jeder Bereich die Daten in leicht unterschiedlicher Form verarbeitet. Ich habe die Beweggründe verstanden und mit kleinen Anpassungen dafür gesorgt, dass jeder weiterhin die benötigten Informationen erhält, die Daten aber miteinander vernetzt werden. Dies hat nicht nur Prozesse verschlankt, sondern auch neue Möglichkeiten für das Berichtswesen eröffnet.",
+    text: "Bei Audi gab es bereits viele Daten. Dabei hat jedoch jeder Bereich die Daten in leicht unterschiedlicher Form verarbeitet. Ich habe die Beweggründe verstanden und mit kleinen Anpassungen dafür gesorgt, dass jeder weiterhin die benötigten Informationen erhält, die Daten aber miteinander vernetzt werden. Dies hat nicht nur Prozesse verschlankt, sondern auch neue Möglichkeiten für ein neues Berichtswesen eröffnet.",
   },
   {
     company: "Volkswagen",
