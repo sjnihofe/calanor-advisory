@@ -3,43 +3,31 @@ import Link from "next/link";
 
 export default function FounderCTA() {
   return (
-    <section className="bg-background">
+    <section className="bg-background py-16 lg:py-36">
 
-      <div className="mx-auto max-w-7xl px-6 py-28 lg:py-36">
+      <div className="mx-auto max-w-7xl lg:px-6">
 
-        <div className="overflow-hidden rounded-sm bg-surface-dark">
+        <div className="overflow-hidden bg-surface-dark lg:rounded-sm">
 
           <div className="grid lg:grid-cols-[420px_1fr]">
 
-            {/* Bild */}
 
-            <div className="relative min-h-[520px]">
-
-              <Image
-                src="/Founder.jpg"
-                alt="Niklas Hofeditz – Gründer CALANOR Advisory"
-                fill
-                className="object-cover"
-              />
-
-            </div>
 
             {/* Inhalt */}
 
-            <div className="flex flex-col justify-center px-10 py-16 lg:px-20">
+            <div className="px-5 py-8 sm:px-6 lg:px-20 lg:py-16">
 
-              <p className="text-sm uppercase tracking-[0.3em] text-white">
+              <p className="text-xs uppercase tracking-[0.3em] text-white lg:text-sm">
                 Ein persönliches Wort
               </p>
 
-              <h2 className="mt-6 text-3xl font-light leading-tight text-white lg:text-5xl">
-
+              <h2 className="mt-4 text-2xl font-light leading-tight text-white lg:mt-6 lg:text-5xl">
                 Gute Unternehmenssteuerung
+                <br className="hidden lg:block" />
                 beginnt mit einem Gespräch.
-
               </h2>
 
-              <div className="mt-10 space-y-8 text-lg font-light leading-9 text-[#D4D7DB]">
+              <div className="mt-6 space-y-4 text-sm font-light leading-7 text-[#D4D7DB] lg:mt-10 lg:space-y-8 lg:text-lg lg:leading-9">
 
                 <p>
                   Jedes Unternehmen ist anders.
@@ -47,9 +35,8 @@ export default function FounderCTA() {
                 </p>
 
                 <p>
-                  Bevor über Software,
-                  Dashboards oder künstliche Intelligenz gesprochen wird,
-                  möchte ich zuerst verstehen,
+                  Bevor über Software, Dashboards oder künstliche Intelligenz
+                  gesprochen wird, möchte ich zuerst verstehen,
                   welche Entscheidungen in Ihrem Unternehmen getroffen werden
                   und welche Informationen dafür heute fehlen.
                 </p>
@@ -72,13 +59,13 @@ export default function FounderCTA() {
 
               {/* Signatur */}
 
-              <div className="mt-14 border-l-2 border-accent pl-6">
+              <div className="mt-8 border-l-2 border-accent pl-4 lg:mt-14 lg:pl-6">
 
-                <p className="text-xl font-light text-white">
+                <p className="text-base font-light text-white lg:text-xl">
                   Niklas Hofeditz
                 </p>
 
-                <p className="mt-2 uppercase tracking-[0.2em] text-[#BFC4C8]">
+                <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-[#BFC4C8] lg:mt-2 lg:text-sm">
                   Gründer · CALANOR Advisory
                 </p>
 
@@ -86,11 +73,11 @@ export default function FounderCTA() {
 
               {/* Button */}
 
-              <div className="mt-14">
+              <div className="mt-8 lg:mt-14">
 
                 <Link
-                  href="/kontakt"
-                  className="inline-flex items-center rounded-sm bg-accent px-8 py-4 text-base font-light text-white transition duration-300 hover:bg-accent-secondary"
+                  href="/#kontakt"
+                  className="block w-full rounded-sm bg-accent px-4 py-3 text-center text-sm font-light text-white transition duration-300 hover:bg-accent-secondary lg:inline-flex lg:w-auto lg:px-8 lg:py-4 lg:text-base"
                 >
                   Unverbindliches Erstgespräch vereinbaren
                 </Link>
