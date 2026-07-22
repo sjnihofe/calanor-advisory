@@ -24,7 +24,7 @@ export default function ProblemSection() {
             </p>
 
             <h2 className="mx-auto max-w-[720px] text-2xl font-light leading-tight text-surface-dark">
-            Viele Unternehmen haben nicht <span className="text-accent">zu wenig Daten.</span>
+            Viele Unternehmen haben nicht {""}<span className="text-accent">zu wenig Daten. </span>
             Sie kommen nur nicht <span className="text-accent-secondary">adressatengerecht</span> an.
             </h2>
 

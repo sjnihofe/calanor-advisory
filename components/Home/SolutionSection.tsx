@@ -14,7 +14,7 @@ const [open, setOpen] = useState(0);
     {
       number: "02",
       title: "Informationen analysieren",
-      text: "Wir identifizieren die benötigten Informationen und ihre Quellen innerhalb Ihrer Prozesse.",
+      text: "Wir identifizieren die benötigten Informationen und Ihre Quellen innerhalb Ihrer Prozesse.",
     },
     {
       number: "03",

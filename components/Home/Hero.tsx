@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="max-w-[760px] lg:-ml-20 lg:flex-shrink-0">
 
         <h1 className="text-center text-2xl font-light leading-tight text-surface-dark sm:text-5xl lg:text-left lg:text-6xl">
-          Sie brauchen nicht noch <span className="text-accent">mehr Daten.</span>
+          Sie brauchen nicht noch {" "}<span className="text-accent">mehr Daten.</span>
           <br className="hidden lg:block" />
           {" "}Sie brauchen ein besseres{" "}
           <span className="text-accent-secondary">Steuerungsmodell.</span>

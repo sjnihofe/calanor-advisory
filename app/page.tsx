@@ -1,51 +1,49 @@
-import Brand from "../components/Brand";
-import Hero from "../components/Hero";
-import ProblemSection from "../components/ProblemSection";
-import SolutionSection from "../components/SolutionSection";
-import Services from "../components/Services";
-import WhyCalanor from "../components/WhyCalanor";
-import PerspectiveSection from "../components/PerspectiveSection";
-import ContactSection from "../components/ContactSection";
+import Header from "@/components/Header";
+import Hero from "@/components/home/Hero";
+import ProblemSection from "@/components/home/ProblemSection";
+import SolutionSection from "@/components/home/SolutionSection";
+import Services from "@/components/home/Services";
+import WhyCalanor from "@/components/home/WhyCalanor";
+import PerspectiveSection from "@/components/home/PerspectiveSection";
+import ContactSection from "@/components/home/ContactSection";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden bg-background">
+    <>
+      <Header />
 
-      <div className="pt-16 text-center">
+      <main className="overflow-x-hidden bg-background">
 
-        <h1 className="text-[4rem] font-light tracking-[0.15em] text-surface-dark sm:text-[5rem] lg:text-[8rem] lg:tracking-[0.20em]">
-          CALANOR
-        </h1>
+        <div className="pt-1 text-center">
 
-        <p className="mt-1 text-3xl font-extralight tracking-[0.10em] text-accent sm:text-4xl lg:mt-2 lg:text-6xl">
-          ADVISORY
-        </p>
+          <h1 className="text-[4rem] font-light tracking-[0.15em] text-surface-dark sm:text-[5rem] lg:text-[8rem] lg:tracking-[0.20em]">
+            CALANOR
+          </h1>
 
-      </div>
+          <p className="mt-1 text-3xl font-extralight tracking-[0.10em] text-accent sm:text-4xl lg:mt-2 lg:text-6xl">
+            ADVISORY
+          </p>
 
-      {/* Hero */}
-      <section className="pt-6 lg:pt-15">
-        <Hero />
-      </section>
+        </div>
 
-      {/* Problem */}
-      <ProblemSection />
+        {/* Hero */}
+        <section className="pt-6 lg:pt-15">
+          <Hero />
+        </section>
 
-      {/* Solution */}
-      <SolutionSection />
+        <ProblemSection />
 
-      {/* WhyCalanor */}
-      <WhyCalanor />
+        <SolutionSection />
 
-      {/* Services */}
-      <Services />
+        <WhyCalanor />
 
-      {/* PerspectiveSection */}
-      <PerspectiveSection />
+        <Services />
 
-      {/* ContactSection */}
-      <ContactSection />
+        <PerspectiveSection />
 
-    </main>
+        <ContactSection />
+
+      </main>
+    </>
   );
 }
