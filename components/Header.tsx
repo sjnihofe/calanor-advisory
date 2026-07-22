@@ -56,7 +56,7 @@ export default function Header() {
               href="/about"
               className="text-[17px] font-light text-surface-dark transition-colors hover:text-accent"
             >
-              Die Geschichte hinter CALANOR
+              Geschichte
             </Link>
 
             <Link
