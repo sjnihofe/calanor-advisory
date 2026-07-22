@@ -17,7 +17,7 @@ export default function FounderCTA() {
             beginnt mit einem Gespräch.
           </h2>
 
-          <div className="mx-auto mt-8 max-w-3xl space-y-5 text-center text-sm font-light leading-7 text-[#D4D7DB] lg:mt-10 lg:space-y-7 lg:text-lg lg:leading-9">
+          <div className="mx-auto mt-8 max-w-4xl space-y-5 text-center text-sm font-light leading-7 text-[#D4D7DB] lg:mt-10 lg:space-y-7 lg:text-lg lg:leading-9">
 
             <p>
               Jedes Unternehmen ist anders. Deshalb glaube ich nicht an
@@ -39,9 +39,6 @@ export default function FounderCTA() {
             <p className="text-white">
               Vielleicht stellen wir dabei gemeinsam fest, dass Ihr Unternehmen
               gar keine neue Software benötigt.
-            </p>
-
-            <p>
               Sondern lediglich einen besseren Informationsfluss.
             </p>
 
