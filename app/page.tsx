@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
-import Hero from "@/components/home/Hero";
-import ProblemSection from "@/components/home/ProblemSection";
-import SolutionSection from "@/components/home/SolutionSection";
-import Services from "@/components/home/Services";
-import WhyCalanor from "@/components/home/WhyCalanor";
-import PerspectiveSection from "@/components/home/PerspectiveSection";
-import ContactSection from "@/components/home/ContactSection";
+import Hero from "@/components/Home/Hero";
+import ProblemSection from "@/components/Home/ProblemSection";
+import SolutionSection from "@/components/Home/SolutionSection";
+import Services from "@/components/Home/Services";
+import WhyCalanor from "@/components/Home/WhyCalanor";
+import PerspectiveSection from "@/components/Home/PerspectiveSection";
+import ContactSection from "@/components/Home/ContactSection";
 
 export default function Home() {
   return (
